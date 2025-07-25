@@ -1,13 +1,13 @@
 import os
 from telegram.ext import Updater, CommandHandler
 
-TOKEN = os.getenv(8480081257:AAHKzUDJ_HBHrKTHdMp2Kk0hJwJzwsh1vLo)
+TOKEN ="8480081257:AAHKzUDJ_HBHrKTHdMp2Kk0hJwJzwsh1vLo"
 
 def start(update, context):
-    update.message.reply_text("🌟 سلام! به ربات ذهن‌یار خوش اومدی. هر سوالی درباره خودشناسی و آگاهی داری بپرس.")
+    update.message.reply_text("🌟 سلام! به ربات ذهن‌یار خوش اومدی.")
 
 def help_command(update, context):
-    update.message.reply_text("🔍 با دستورات /start یا /help شروع کن، یا مستقیم سوالتو بپرس.")
+    update.message.reply_text("❓ با دستورات /start یا /help شروع کن، یا مستقیم سوالتو بپرس.")
 
 def echo(update, context):
     text = update.message.text
